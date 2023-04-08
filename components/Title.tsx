@@ -29,7 +29,11 @@ export default function Title() {
     <>
       {/* <Image src={techstack_banner} className=" bg-yellow-400" alt="banner" /> */}
 
-      <div className="mt-20 flex scale-100 flex-row justify-between rounded bg-gradient-to-r from-blue-500 to-red-500 px-10 py-10 shadow-md shadow-slate-500 transition duration-1000 hover:scale-105 hover:shadow-lg hover:shadow-slate-300">
+      <div className="mt-20 flex scale-100 flex-row items-center justify-between rounded bg-gradient-to-r from-blue-600 to-red-400 px-10 py-10 shadow-md shadow-slate-500 transition duration-1000  hover:shadow-lg hover:shadow-slate-300">
+        <div className="absolute top-0 -left-4 h-72 w-72 animate-blob rounded-full bg-purple-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
+        <div className="animation-delay-2000 absolute top-0 -right-4 h-72 w-72 animate-blob rounded-full bg-yellow-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
+        <div className="animation-delay-4000 absolute -bottom-0 left-20 h-72 w-72 animate-blob rounded-full bg-pink-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
+
         <div className="flex flex-col justify-center">
           <div className="absolute mt-48 ml-1 h-20 w-20 rounded-full ring-2 ring-amber-400">
             <Image
@@ -82,13 +86,13 @@ export default function Title() {
         <span className="text-6xl">Er.Jitu Nayak</span>
         <span className="py-4 text-base">based in Banglore, INDIA</span> */}
           <button
-            className="mt-4 flex w-fit flex-row items-center  justify-center rounded-sm bg-yellow-400 py-2 px-6  font-sans font-semibold text-zinc-900 hover:bg-white"
+            className=" z-10 mt-4 flex w-fit flex-row items-center  justify-center rounded-sm bg-yellow-400 py-2 px-6  font-sans font-semibold text-zinc-900 hover:bg-white"
             onClick={() => alert("Not yet added")}
           >
             <FiDownload className="mr-2 h-5 w-5" /> Download My Resume
           </button>
         </div>
-        <div className="space-y-2">
+        <div className="z-10 space-y-2">
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=jitunayak715@gmail.com&tf=1"
             target="_blank"
