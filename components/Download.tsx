@@ -56,8 +56,8 @@ export default function Download() {
             <div className="group relative" key={index}>
               <div
                 className="
-                  absolute inset-0 from-yellow-500 to-blue-500 opacity-75 blur-lg
-                       transition duration-1000 group-hover:bg-gradient-to-r
+                  absolute opacity-100 group-hover:inset-0 group-hover:bg-gradient-to-r group-hover:from-yellow-500 group-hover:to-blue-500
+                       group-hover:blur-lg group-hover:transition group-hover:duration-1000
                 "
               ></div>
               <a

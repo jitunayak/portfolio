@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FiDownload, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import techstack_banner from "./../images/techstack_banner.png";
 export default function Title() {
   const letter = {
     hidden: { opacity: 0, y: 50 },
@@ -28,9 +27,9 @@ export default function Title() {
 
   return (
     <>
-      <Image src={techstack_banner} className=" bg-yellow-400" alt="banner" />
+      {/* <Image src={techstack_banner} className=" bg-yellow-400" alt="banner" /> */}
 
-      <div className="flex flex-row justify-between px-2 pb-20">
+      <div className="mt-20 flex scale-100 flex-row justify-between rounded bg-gradient-to-r from-blue-500 to-red-500 px-10 py-10 shadow-md shadow-slate-500 transition duration-1000 hover:scale-105 hover:shadow-lg hover:shadow-slate-300">
         <div className="flex flex-col justify-center">
           <div className="absolute mt-48 ml-1 h-20 w-20 rounded-full ring-2 ring-amber-400">
             <Image
