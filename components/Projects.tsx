@@ -1,9 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import gindelivery from "./../images/projects/delivery_app.jpg";
 import netflix from "./../images/projects/netflix.jpg";
 import photocomp from "./../images/projects/photocomp.jpg";
 import placeholder from "./../images/projects/placeholder.png";
-import gindelivery from "./../images/projects/delivery_app.jpg";
 
 export default function Projects() {
   const projects = [
@@ -51,7 +50,9 @@ export default function Projects() {
   }
   return (
     <div className="flex flex-col p-10">
-      <div className="my-10 text-2xl font-semibold">Projects</div>
+      <span className="my-10 bg-gradient-to-bl  from-violet-500 to-pink-500 bg-clip-text text-4xl font-bold tracking-wide text-transparent">
+        Side PROJECTS
+      </span>
       <div className="grid grid-cols-1 items-baseline gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
         {projects.map((project, index) => {
           return (
@@ -63,7 +64,7 @@ export default function Projects() {
               <Image
                 src={project?.image}
                 alt="Project Snap"
-                className="object-cover transition hover:scale-125"
+                className="object-cover transition duration-1000 hover:scale-110"
                 placeholder="blur"
                 width={520}
                 height={300}
@@ -77,7 +78,7 @@ export default function Projects() {
                   return (
                     <div
                       key={index}
-                      className="m-1 rounded-lg bg-zinc-700 p-2  font-sans  text-sm text-yellow-600 hover:bg-yellow-600 hover:text-white"
+                      className="m-1 rounded-lg bg-zinc-700 px-2 py-1  font-sans  text-sm text-yellow-600 hover:bg-yellow-600 hover:text-white"
                     >
                       {tech}
                     </div>
