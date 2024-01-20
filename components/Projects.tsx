@@ -43,6 +43,13 @@ export default function Projects() {
       stack: ["Expo", "React Native", "Mobile App"],
       image: placeholder,
     },
+
+     {
+      url: "https://github.com/jitunayak/airbnb",
+      title: "Air Bnb",
+      stack: ["React", "Tailwind CSS"],
+      image: "https://github.com/jitunayak/airbnb/blob/main/public/Screenshot%202023-09-04%20at%2012.49.25%20AM.png,
+    },
   ];
 
   function openUrlInNewTab(url: string) {
@@ -51,7 +58,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col p-10">
       <span className="my-10 bg-gradient-to-bl  from-violet-500 to-pink-500 bg-clip-text text-4xl font-bold tracking-wide text-transparent">
-        Side PROJECTS
+        Projects
       </span>
       <div className="grid grid-cols-1 items-baseline gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
         {projects.map((project, index) => {
